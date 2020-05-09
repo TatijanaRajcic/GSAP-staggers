@@ -1,0 +1,38 @@
+html,
+body {
+  width: 0; /* for fixing iOS iframe issues */
+  min-width: 100%; /* for fixing iOS iframe issues */
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #acdde7;
+  text-align: center;
+  color: #bbb;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+.box {
+  background-color: #adb9e3;
+  position: relative;
+}
+.box:before {
+  padding-top: 100%;
+  content: "";
+  display: block;
+}
